@@ -1,0 +1,248 @@
+
+.navigation{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap:80px;
+    width: 80vw;
+    height: 120px;
+    margin-left: 10vw;
+    /* border: 2px solid;   */
+    justify-content: center;
+    margin-top: 50px;
+
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(42, 185, 252);
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: w;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-decoration: none;
+   
+}
+
+.navigation>div{
+    padding-top: 30px;
+    
+}
+
+h1{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin-top: 30px;
+    
+}
+
+span{
+    color: rgb(37, 163, 221);
+    
+}
+
+.hello{
+    position: absolute;
+    font-family: "Archivo Black", sans-serif;
+    top:165px
+    
+}
+.detail{
+    position: relative;
+    /* border: 2px solid; */
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 50px;
+    padding: 150px;
+    background-color: rgb(255, 191, 14);
+    
+
+
+}
+
+.detail:hover {
+    background-color: rgb(255, 191, 14); /* Darker green on hover */
+    box-shadow: 0px 0px 100px rgb(42, 185, 252); /* Add shadow */
+}
+
+.projects:hover {
+    /* background-color: rgb(57, 100, 243); Darker green on hover */
+    box-shadow: 0px 0px 100px rgba(245, 190, 39, 0.719); /* Add shadow */
+}
+
+
+
+img{
+    width: 500px;
+    position: absolute;
+    right: 70px;
+    top:30px;
+    
+
+}
+
+
+.projects{
+    width: 80vw;
+    height: 650px;
+    margin-left: 10vw;
+    margin-top: 100px;
+    background-color: rgb(42, 185, 252);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:0px
+}
+
+
+
+.card{
+    padding-top: 290px;
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.card>img{
+    width: 250px;
+    position: absolute;
+    top:17px;
+    left: 17px;
+    
+    
+    
+}
+
+.project-head{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    display: flex;
+    background-color: rgb(247, 127, 221);
+    width: 380px;
+    margin-left: 12vw;
+    margin-top: 20px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    /* border-radius: 20px; */
+    /* border-top-left-radius: 0px;
+    border-top-right-radius: 0px; */
+
+}
+
+button:hover {
+    background-color: rgb(255, 191, 14); /* Darker green on hover */
+    box-shadow: 0px 0px 150px rgb(3, 3, 3); /* Add shadow */
+}
+
+
+.footer{
+    background-color: rgb(46, 49, 49);
+    width: 80vw;
+    height: 300px;
+    margin-left: 10vw;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: rgb(42, 185, 252);
+    text-align: center;
+    padding-top: 120PX;
+    
+}
+
+.footer:hover{
+    box-shadow: 0px 0px 150px rgb(42, 185, 252);
+}
+h2{
+    font-size:3.5rem;
+    font-weight: bold;
+}
+
+
+
+@media (max-width:1024px){
+    img{
+        /* top:500px */
+        width: 300px;
+        left:500px;
+        top:80px
+    }
+
+    h1{
+        font-size: 2rem;
+        
+    }
+
+    .detail{
+        /* padding: 100px; */
+        padding-left: 10%;
+        height:340px;
+    }
+    
+    
+}
+
+@media (max-width:768px){
+    img{
+        left: 0px;
+        top:0px;
+        border-radius: 20px;
+    }
+
+    .detail{
+        background-color: white;
+        padding-top: 250px;
+        padding-left: 0%;
+        font-size: 20px;
+        
+    }
+
+    h1{
+        font-size: 47px;
+    }
+
+    .navigation{
+        background-color: rgb(252, 182, 32);
+    }
+
+    a{
+        color: rgb(0, 0, 0);
+    }
+
+    span{
+        color:rgb(252, 182, 32) ;
+    }
+}
+
+
+@media (max-width:440px){
+    h1{
+        font-size: 60px;
+    }
+
+    .detail{
+        font-size: 18px;
+        /* border: 5px solid; */
+        height: auto;
+       padding-right: 0px;
+        
+    }
+
+    .navigation{
+        grid-template-columns: 70px 70px 70px 70px;
+        font-size: 12px;
+    }
+    
+}
